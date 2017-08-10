@@ -1,0 +1,382 @@
+@font-face {
+  font-family: 'GloucesterMTPro-ExtCond';
+  src: url("../fonts/gloucester-mt-extra-condensed.html");
+  src: url("../fonts/gloucester-mt-extra-condensedd41d.html?#iefix") format("embedded-opentype"), url("../fonts/gloucester-mt-extra-condensed-2.html") format("woff"), url("../fonts/gloucester-mt-extra-condensed-3.html") format("truetype"), url("../fonts/gloucester-mt-extra-condensed-4.html#wf") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+
+html, body {
+  font-size: 14px;
+  color: #231E20;
+  font-family: Times, helvetica, arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400; }
+  @media only screen and (max-width: 760px) {
+    html, body {
+      font-size: 12px; } }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+@media only screen and (max-width: 760px) {
+  .desktop {
+    display: none; } }
+
+.mobile {
+  display: none; }
+  @media only screen and (max-width: 760px) {
+    .mobile {
+      display: block; } }
+
+.clear {
+  clear: both; }
+
+.penHolder {
+  position: relative;
+  min-height: 1200px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+  .penHolder .pen div {
+    width: 100%;
+    position: relative;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    left: 0; }
+    .penHolder .pen div h2 {
+      font-size: 14px;
+      font-family: helvetica;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      box-sizing: border-box; }
+  .penHolder .pen .lid {
+    background-size: 90px auto;
+    min-height: 246px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .penHolder .pen .lid.top {
+      z-index: 4;
+      background-image: url("../../arthurconandoyle.93ft.com/images/pen/lid-top.png"); }
+    .penHolder .pen .lid.bottom {
+      z-index: 1;
+      background-image: url("../../arthurconandoyle.93ft.com/images/pen/lid-bottom.png"); }
+  .penHolder .pen .nib {
+    z-index: 2;
+    background-size: 90px auto;
+    background-image: url("../../arthurconandoyle.93ft.com/images/pen/nib.png");
+    position: absolute;
+    min-height: 107px;
+    top: 320px;
+    -webkit-transition: top 0.075s ease-out;
+    -moz-transition: top 0.075s ease-out;
+    -ms-transition: top 0.075s ease-out;
+    -o-transition: top 0.075s ease-out;
+    transition: top 0.075s ease-out; }
+  .penHolder .pen .penBody {
+    z-index: 3;
+    top: 384px;
+    background-size: 90px auto;
+    min-height: 808px;
+    -webkit-transition: top 0.075s ease-out;
+    -moz-transition: top 0.075s ease-out;
+    -ms-transition: top 0.075s ease-out;
+    -o-transition: top 0.075s ease-out;
+    transition: top 0.075s ease-out;
+    background-image: url("../../arthurconandoyle.93ft.com/images/pen/body.png"); }
+    .penHolder .pen .penBody.fixed {
+      position: fixed;
+      bottom: -680px; }
+    .penHolder .pen .penBody.hide {
+      display: none; }
+  .penHolder .list {
+    top: 85px;
+    width: 300px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    position: absolute; }
+    @media only screen and (max-width: 760px) {
+      .penHolder .list {
+        display: none; } }
+    .penHolder .list p {
+      width: 100%;
+      display: block;
+      padding-bottom: 50px; }
+      .penHolder .list p strong {
+        font-family: 'Marion-Bold'; }
+    .penHolder .list ul li {
+      padding-bottom: 50px; }
+    .penHolder .list.left {
+      left: 0; }
+    .penHolder .list.right {
+      right: 0; }
+
+.navContainer {
+  min-height: 100vh;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100vw;
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  -webkit-transition: opacity 0.5s ease, visibility 0.5s ease, z-index 0.1s ease 0.5s;
+  -moz-transition: opacity 0.5s ease, visibility 0.5s ease, z-index 0.1s ease 0.5s;
+  -ms-transition: opacity 0.5s ease, visibility 0.5s ease, z-index 0.1s ease 0.5s;
+  -o-transition: opacity 0.5s ease, visibility 0.5s ease, z-index 0.1s ease 0.5s;
+  transition: opacity 0.5s ease, visibility 0.5s ease, z-index 0.1s ease 0.5s; }
+  .navContainer .navContent {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    height: 100vh;
+    display: table; }
+    @media only screen and (max-height: 700px) {
+      .navContainer .navContent {
+        padding: 80px 0;
+        box-sizing: border-box; } }
+    .navContainer .navContent p {
+      font-family: Georgia, Times, "Times New Roman", serif;
+      font-size: 12px;
+      font-style: italic;
+      line-height: 20px;
+      padding-top: 50px;
+      max-width: 400px;
+      height: 110px;
+      overflow-y: hidden;
+      margin: 0 auto;
+      opacity: 0; }
+      @media only screen and (max-height: 900px) {
+        .navContainer .navContent p {
+          font-size: 12px;
+          padding-top: 35px; } }
+    .navContainer .navContent .navItems {
+      max-width: 800px;
+      display: table-cell;
+      margin: 0 auto 0 auto;
+      vertical-align: middle; }
+      .navContainer .navContent .navItems ul {
+        text-align: center;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        padding: 30px 0;
+        -webkit-transition: max-width 1s ease;
+        -moz-transition: max-width 1s ease;
+        -ms-transition: max-width 1s ease;
+        -o-transition: max-width 1s ease;
+        transition: max-width 1s ease; }
+        .navContainer .navContent .navItems ul:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 1px;
+          height: 100%;
+          max-height: 0;
+          background-color: #000000; }
+        .navContainer .navContent .navItems ul > li {
+          padding: 9px 0;
+          position: relative;
+          min-height: 26px;
+          width: 100%;
+          opacity: 0; }
+          @media only screen and (max-height: 900px) {
+            .navContainer .navContent .navItems ul > li {
+              padding: 2px 0; } }
+          .navContainer .navContent .navItems ul > li > a > span {
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 17px;
+            font-family: 'JohnstonITCTTBold', sans-serif;
+            min-width: 200px;
+            cursor: pointer;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all 1s ease; }
+            @media only screen and (max-height: 900px) {
+              .navContainer .navContent .navItems ul > li > a > span {
+                font-size: 15px; } }
+            .navContainer .navContent .navItems ul > li > a > span:hover {
+              color: #7a797a; }
+          .navContainer .navContent .navItems ul > li.active span {
+            color: #7a797a; }
+      .navContainer .navContent .navItems .social {
+        position: absolute;
+        left: 50%;
+        bottom: 40px;
+        z-index: 5000;
+        -webkit-transform: translate(-50%, 0);
+        -moz-transform: translate(-50%, 0);
+        -ms-transform: (translate(-50%, 0),);
+        -o-transform: translate(-50%, 0);
+        transform: translate(-50%, 0); }
+        .navContainer .navContent .navItems .social a {
+          padding: 0 10px; }
+          .navContainer .navContent .navItems .social a img {
+            width: 25px; }
+      .navContainer .navContent .navItems ol {
+        box-sizing: border-box;
+        text-align: center;
+        position: relative;
+        height: auto;
+        max-height: 0;
+        overflow: hidden;
+        -webkit-transition: max-height 1s ease;
+        -moz-transition: max-height 1s ease;
+        -ms-transition: max-height 1s ease;
+        -o-transition: max-height 1s ease;
+        transition: max-height 1s ease; }
+        .navContainer .navContent .navItems ol > li {
+          opacity: 0;
+          width: 100%;
+          min-height: 25px;
+          padding: 4px 0;
+          position: relative; }
+          @media only screen and (max-height: 900px) {
+            .navContainer .navContent .navItems ol > li {
+              padding: 2px 0; } }
+          .navContainer .navContent .navItems ol > li > a {
+            color: #000000;
+            text-transform: uppercase;
+            font-family: 'JohnstonMdITCTT', sans-serif;
+            font-size: 14px;
+            min-width: 200px;
+            letter-spacing: 2px;
+            cursor: pointer; }
+            @media only screen and (max-height: 900px) {
+              .navContainer .navContent .navItems ol > li > a {
+                font-size: 14px; } }
+          .navContainer .navContent .navItems ol > li:first-child {
+            padding-top: 15px; }
+          .navContainer .navContent .navItems ol > li:last-child {
+            padding-bottom: 45px; }
+        .navContainer .navContent .navItems ol.active {
+          max-height: 355px; }
+          .navContainer .navContent .navItems ol.active:before {
+            width: 50px; }
+        .navContainer .navContent .navItems ol:before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          background-color: #000000;
+          width: 0;
+          height: 2px;
+          margin-bottom: 13px;
+          -webkit-transform: translate(-50%, 0);
+          -moz-transform: translate(-50%, 0);
+          -ms-transform: (translate(-50%, 0),);
+          -o-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+          -webkit-transition: width 0.4s ease 1s;
+          -moz-transition: width 0.4s ease 1s;
+          -ms-transition: width 0.4s ease 1s;
+          -o-transition: width 0.4s ease 1s;
+          transition: width 0.4s ease 1s; }
+          @media only screen and (max-height: 900px) {
+            .navContainer .navContent .navItems ol:before {
+              margin-bottom: 18px; } }
+      .navContainer .navContent .navItems.active ul {
+        max-width: 50%;
+        padding-right: 80px; }
+        .navContainer .navContent .navItems.active ul:after {
+          max-height: 100%;
+          -webkit-transition: max-height 1.5s ease 1.2s;
+          -moz-transition: max-height 1.5s ease 1.2s;
+          -ms-transition: max-height 1.5s ease 1.2s;
+          -o-transition: max-height 1.5s ease 1.2s;
+          transition: max-height 1.5s ease 1.2s; }
+        .navContainer .navContent .navItems.active ul li span {
+          right: 0;
+          text-align: right;
+          -webkit-transform: translate(0, -50%);
+          -moz-transform: translate(0, -50%);
+          -ms-transform: (translate(0, -50%),);
+          -o-transform: translate(0, -50%);
+          transform: translate(0, -50%); }
+  .navContainer.open {
+    opacity: 1;
+    visibility: visible;
+    z-index: 4000;
+    -webkit-transition: opacity 0.5s ease, visibility 0.5s ease, z-index 0.5s ease;
+    -moz-transition: opacity 0.5s ease, visibility 0.5s ease, z-index 0.5s ease;
+    -ms-transition: opacity 0.5s ease, visibility 0.5s ease, z-index 0.5s ease;
+    -o-transition: opacity 0.5s ease, visibility 0.5s ease, z-index 0.5s ease;
+    transition: opacity 0.5s ease, visibility 0.5s ease, z-index 0.5s ease; }
+    .navContainer.open .navContent .navItems ul li {
+      opacity: 1; }
+      .navContainer.open .navContent .navItems ul li:nth-child(1) {
+        -webkit-transition: opacity 0.35s ease 0.84s;
+        -moz-transition: opacity 0.35s ease 0.84s;
+        -ms-transition: opacity 0.35s ease 0.84s;
+        -o-transition: opacity 0.35s ease 0.84s;
+        transition: opacity 0.35s ease 0.84s; }
+      .navContainer.open .navContent .navItems ul li:nth-child(2) {
+        -webkit-transition: opacity 0.35s ease 0.93s;
+        -moz-transition: opacity 0.35s ease 0.93s;
+        -ms-transition: opacity 0.35s ease 0.93s;
+        -o-transition: opacity 0.35s ease 0.93s;
+        transition: opacity 0.35s ease 0.93s; }
+      .navContainer.open .navContent .navItems ul li:nth-child(3) {
+        -webkit-transition: opacity 0.35s ease 1.02s;
+        -moz-transition: opacity 0.35s ease 1.02s;
+        -ms-transition: opacity 0.35s ease 1.02s;
+        -o-transition: opacity 0.35s ease 1.02s;
+        transition: opacity 0.35s ease 1.02s; }
+      .navContainer.open .navContent .navItems ul li:nth-child(4) {
+        -webkit-transition: opacity 0.35s ease 1.11s;
+        -moz-transition: opacity 0.35s ease 1.11s;
+        -ms-transition: opacity 0.35s ease 1.11s;
+        -o-transition: opacity 0.35s ease 1.11s;
+        transition: opacity 0.35s ease 1.11s; }
+      .navContainer.open .navContent .navItems ul li:nth-child(5) {
+        -webkit-transition: opacity 0.35s ease 1.2s;
+        -moz-transition: opacity 0.35s ease 1.2s;
+        -ms-transition: opacity 0.35s ease 1.2s;
+        -o-transition: opacity 0.35s ease 1.2s;
+        transition: opacity 0.35s ease 1.2s; }
+      .navContainer.open .navContent .navItems ul li:nth-child(6) {
+        -webkit-transition: opacity 0.35s ease 1.29s;
+        -moz-transition: opacity 0.35s ease 1.29s;
+        -ms-transition: opacity 0.35s ease 1.29s;
+        -o-transition: opacity 0.35s ease 1.29s;
+        transition: opacity 0.35s ease 1.29s; }
+      .navContainer.open .navContent .navItems ul li:nth-child(7) {
+        -webkit-transition: opacity 0.35s ease 1.38s;
+        -moz-transition: opacity 0.35s ease 1.38s;
+        -ms-transition: opacity 0.35s ease 1.38s;
+        -o-transition: opacity 0.35s ease 1.38s;
+        transition: opacity 0.35s ease 1.38s; }
+      .navContainer.open .navContent .navItems ul li:nth-child(8) {
+        -webkit-transition: opacity 0.35s ease 1.47s;
+        -moz-transition: opacity 0.35s ease 1.47s;
+        -ms-transition: opacity 0.35s ease 1.47s;
+        -o-transition: opacity 0.35s ease 1.47s;
+        transition: opacity 0.35s ease 1.47s; }
+      .navContainer.open .navContent .navItems ul li:nth-child(9) {
+        -webkit-transition: opacity 0.35s ease 1.56s;
+        -moz-transition: opacity 0.35s ease 1.56s;
+        -ms-transition: opacity 0.35s ease 1.56s;
+        -o-transition: opacity 0.35s ease 1.56s;
+        transition: opacity 0.35s ease 1.56s; }
+      .navContainer.open .navContent .navItems ul li:nth-child(10) {
+        -webkit-transition: opacity 0.35s ease 1.65s;
+        -moz-transition: opacity 0.35s ease 1.65s;
+        -ms-transition: opacity 0.35s ease 1.65s;
+        -o-transition: opacity 0.35s ease 1.65s;
+        transition: opacity 0.35s ease 1.65s; }
